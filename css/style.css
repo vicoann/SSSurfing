@@ -44,13 +44,7 @@ img {
 }
 
 .container {
-    width: 1196px;
-    margin: 0 auto;
-}
-
-.small-container {
-    width: 912px;
-    margin: 0 auto;
+    margin: 0 20px;
 }
 
 a {
@@ -70,7 +64,7 @@ a {
 }
 
 .navigation li {
-    padding-left: 73px;
+    padding-left: 10px;
 }
 
 .navigation a:hover {
@@ -89,19 +83,14 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 89px;
-    margin-bottom: 211px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .banner p {
     padding-top: 59px;
     line-height: 35px;
     text-align: center;
-}
-
-.reviews_videos {
-    display: flex;
-    justify-content: space-between;
 }
 
 .recent_reviews {
@@ -157,13 +146,16 @@ a {
 }
 
 .video-container {
-    padding: 0 20px;
+    width: 100%;
+    margin-bottom: 15px;
 }
 
-.video-3-container iframe {
-    padding: 0 20px;
+.video-3-container {
+    width: 100%;
 }
-
+.video-3-container .video-wrapper  {
+    margin-bottom: 15px;
+}
 .button-box {
     display: flex;
     flex-direction: column;
@@ -176,7 +168,7 @@ a {
     width: 300px;
     padding: 20px;
     background-color:white;
-    border: black solid 1px;
+    border: grey solid 1px;
     font-weight: 400;
     transition: all .5s ease;
     border-radius: 2px;
@@ -186,5 +178,50 @@ a {
 
 .btn:hover {
     background-color: rgb(119, 194, 255);
-    
+}
+
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 1196px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    .reviews_videos {
+        display: flex;
+        justify-content: space-between;
+    }
+    .small-container {
+        max-width: 912px;
+        margin: 0 auto;
+    }
+    .recent_reviews {
+        flex-basis: 22%;
+    }
+    .video-container {
+        flex-basis: 50%; 
+    }
+    .video-3-container {
+        flex-basis: 23%;
+    }
+    .navigation li {
+        padding-left: 73px;
+    }
+    .banner {
+        margin-bottom: 211px;
+        margin-top: 89px;
+    }
 }
