@@ -1,4 +1,190 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h3 {
+    font-size: 50px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 36px;
+}
+
+h5 {
+    font-size: 30px;
+}
+
+.recent-blogs-container h4{
+    font-style: italic;
+}
+
+.review p:last-child {
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+}
+
 .container {
-    width: 1440 px;
+    width: 1196px;
     margin: 0 auto;
+}
+
+.small-container {
+    width: 912px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+.main-navigation {
+    padding-top: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation li {
+    padding-left: 73px;
+}
+
+.navigation a:hover {
+    color: black;
+   
+}
+
+.current-page {
+    color: black;
+    padding-bottom: 8px;
+    border-bottom: 0.1px solid black;
+}
+
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 89px;
+    margin-bottom: 211px;
+}
+
+.banner p {
+    padding-top: 59px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.reviews_videos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent_reviews {
+    display: flex;
+    flex-direction: column;
+}
+
+.review {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-right: 20px;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.review p {
+    line-height: 22px;
+}
+
+.review p:first-child {
+    font-style: italic;
+}
+
+.popular-instructors {
+    display: flex;
+    flex-direction: column;
+    margin-top: 89px;
+    margin-bottom: 211px;
+}
+
+.popular-instructors ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-instructors img {
+    margin-bottom: 50px;
+}
+
+.popular-instructors h5 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.popular-instructors p {
+    text-align: center;
+    color: rgb(48, 194, 126);
+}
+
+.enroll-now {
+    margin-top: 89px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.video-container {
+    padding: 0 20px;
+}
+
+.video-3-container iframe {
+    padding: 0 20px;
+}
+
+.button-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    width: 300px;
+    padding: 20px;
+    background-color:white;
+    border: black solid 1px;
+    font-weight: 400;
+    transition: all .5s ease;
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(119, 194, 255);
+    
 }
